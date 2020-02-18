@@ -15,3 +15,11 @@ section p.some-content {
 #ru{
     color: rgb(136, 34, 82);
 }
+.movies{
+    background-color: rgb(31, 51, 51);
+    color: darkorange;
+}
+#doc{
+    background-color: firebrick;
+    color: darkturquoise;
+}
