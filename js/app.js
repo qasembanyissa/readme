@@ -45,4 +45,9 @@ if (n5.toLowerCase() === 'yes' || n5.toLowerCase() === 'y') {
     alert('try again');
 }
 
-alert('welcome', xz);
+alert('welcome  ' + xz);
+document.write ('welcome  ' + xz);
+
+
+
+
