@@ -2,6 +2,7 @@
 
 var xz = prompt('what is your name');
 var counter = 0;
+var totalQuestion=7;
 
 var n1 = prompt('my name is qasem ? yes/no ');
 if (n1.toLowerCase() === 'yes' || n1.toLowerCase() === 'y') {
@@ -101,21 +102,29 @@ while (num < 4) {
 
 var films=['intersteller','inception','django','LOTR','The VOW'];
 var z=0;
-for(z;z<films.length;z++){
-  var b =prompt('whate is my favourt film ?');
-  if(b === films[z]){
-    alert('correct answer');
-    counter ++;
-    break;
-  }else{
-    alert('wrong answer');
+var question7=prompt("whats is my faviourite movie??")
+for(var i=0;i<6;i++)
+{
+  for(var x=0;x<films.length;x++)
+  {
+    if(question7 === films[0] || question7 === films[1] || question7 === films[2] ||
+      question7 === films[3] || question7 === films[4])
+      {
+        counter++;
+        alert("correct answer this is my best movie"+films[x]);
+        i=5;
+        break;
+
+      }
+      else
+      {
+        var question7=prompt("whats is my faviourite movie??");
+
+      }
+    
   }
-
+  break;
+  
 }
-if (z === films.length){
-  alert('you are used all attemps '+films);
-}
-document.write('<p id = doc> '+xz+', thanke you , your good '+counter+'<P>');
-
-
-
+alert("your score is"+counter+' out of'+totalQuestion);
+ 
