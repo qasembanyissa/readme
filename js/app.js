@@ -6,7 +6,7 @@ var counter = 0;
 var n1 = prompt('my name is qasem ? yes/no ');
 if (n1.toLowerCase() === 'yes' || n1.toLowerCase() === 'y') {
   alert('correct');
-  counter ++;
+  counter++;
 } else if (n1.toLowerCase() === 'no' || n1.toLowerCase() === 'n') {
   alert('incorrect , my name is qasem');
 } else {
@@ -17,7 +17,7 @@ if (n2.toLowerCase() === 'yes' || n2.toLowerCase() === 'y') {
   alert('incorrect! , i have 24 years');
 } else if (n2.toLowerCase() === 'no' || n2.toLowerCase() === 'n') {
   alert('corrct , i have 24 years');
-  counter ++;
+  counter++;
 } else {
   alert('try again');
 }
@@ -27,13 +27,13 @@ if (n3.toLowerCase() === 'yes' || n3.toLowerCase() === 'y') {
   alert('incorrect , i dont like reading , i like sport');
 } else if (n3.toLowerCase() === 'no' || n3.toLowerCase() === 'n') {
   alert('correct , i like sport ');
-  counter ++;
+  counter++;
 } else {
   alert('try again');
 } var n4 = prompt('my favourt club is real madrid ? yes/no');
 if (n4.toLowerCase() === 'yes' || n4.toLowerCase() === 'y') {
   alert('correct');
-  counter ++;
+  counter++;
 } else if (n4.toLowerCase() === 'no' || n4.toLowerCase() === 'n') {
   alert('incorrect! , my favourt club is real madrid');
 } else {
@@ -43,7 +43,7 @@ if (n4.toLowerCase() === 'yes' || n4.toLowerCase() === 'y') {
 var n5 = prompt('iam love with coffee ? yes/no');
 if (n5.toLowerCase() === 'yes' || n5.toLowerCase() === 'y') {
   alert('correct');
-  counter ++;
+  counter++;
 } else if (n5.toLowerCase() === 'no' || n5.toLowerCase() === 'n') {
   alert('incorrect , i love coffe of course');
 } else {
@@ -63,33 +63,33 @@ var q6 = prompt('i need ypu to choise anumber i added it , and i need you to gue
 while (num < 4) {
   if (q6 == 15) {
     alert('great , good job , this is the right number');
-    counter ++;
+    counter++;
     break;
   }
   else if (q6 < 10) {
     alert('The number is small, choose a higher number');
     q6 = prompt('try again');
     num++;
-    console.log('first try',num)
+    console.log('first try', num)
   }
-  else if (9 < q6 && q6< 15) {
+  else if (9 < q6 && q6 < 15) {
     alert('Choose a slightly higher number, you got close to answering!');
     q6 = prompt('try again');
-    console.log('second try',num);
+    console.log('second try', num);
     num++;
 
   }
 
-  else if (q6>15 && q6<21) {
+  else if (q6 > 15 && q6 < 21) {
     alert('Choose a slightly lower number, you came close to answering!');
     q6 = prompt('i need ypu to choise anumber i added it , and i need you to guess what is number , you have four chanses to correct a wright answer');
-    console.log('third try',num);
+    console.log('third try', num);
     num++;
   }
-  else if ( q6 > 22 ) {
+  else if (q6 > 22) {
     alert('The number is high, choose a lower number');
     q6 = prompt('i need ypu to choise anumber i added it , and i need you to guess what is number , you have four chanses to correct a wright answer');
-    console.log('fourth try',num)
+    console.log('fourth try', num)
     num++;
 
   } else {
@@ -99,23 +99,23 @@ while (num < 4) {
   }
 }
 
-var films=['intersteller','inception','django','LOTR','The VOW'];
-var z=0;
-for(z;z<films.length;z++){
-  var b =prompt('whate is my favourt film ?');
-  if(b === films[z]){
+var films = ['intersteller', 'inception', 'django', 'LOTR', 'The VOW'];
+var z = 0;
+for (z; z < films.length; z++) {
+  var b = prompt('whate is my favourt film ?');
+  if (b === films[z]) {
     alert('correct answer');
-    counter ++;
+    counter++;
     break;
-  }else{
+  } else {
     alert('wrong answer');
   }
 
 }
-if (z === films.length){
-  alert('you are used all attemps '+films);
+if (z === films.length) {
+  alert('you are used all attemps ' + films);
 }
-document.write('<p id = doc> '+xz+', thanke you , your good '+counter+'<P>');
+document.write('<p id = doc> ' + xz + ', thanke you , your good ' + counter + '<P>');
 
 
 
