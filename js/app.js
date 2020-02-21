@@ -61,7 +61,7 @@ function listnumber(){
   var q6 = prompt('i need ypu to choise anumber i added it , and i need you to guess what is number , you have four chanses to correct a wright answer');
 
   while (num < 4) {
-    if (q6 === 15) {
+    if (q6 == 15) {
       alert('great , good job , this is the right number');
       counter++;
       break;
@@ -101,8 +101,9 @@ function listnumber(){
 }
 function bestmovies(){
 
-  var films=['intersteller','inception','django','LOTR','The VOW'];
+  var films=['intersteller','inception','django','lotr','the vow'];
   var question7=prompt('whats is my faviourite movie??');
+  var question7=question7.toLowerCase;
   for(var i=0;i<6;i++)
   {
     for(var x=0;x<films.length;x++)
@@ -111,23 +112,25 @@ function bestmovies(){
         question7 === films[3] || question7 === films[4])
       {
         counter++;
-        alert('orrect answer this is my best movie'+films[x]);
+        alert('correct answer this is my best movie'+films[x]);
         i=5;
         break;
 
       }
       else
       {
+        var question7=question7.toLowerCase;
+
         question7=prompt('whats is my faviourite movie??');
 
       }
     }
     break;
   }
+  alert('your score is'+counter+' out of'+totalQuestion);
 }
 
 
-alert('your score is'+counter+' out of'+totalQuestion);
 personla();
 listnumber();
 bestmovies();
