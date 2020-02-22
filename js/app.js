@@ -119,7 +119,6 @@ function bestmovies(){
       }
       else
       {
-        var question7=question7.toLowerCase;
 
         question7=prompt('whats is my faviourite movie??');
 
